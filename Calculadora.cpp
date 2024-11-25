@@ -8,11 +8,8 @@
 
 using namespace std; // necesario para no tener que escribir std :: antes de cada cin o cout
 
-
 int main()
 {
-
-	
 	int opcion = 0;
 	// crear los objetos de las clases
 	ejemplo EjObjeto; // ejemplo de como crear el objeto
@@ -53,8 +50,7 @@ int main()
 
 		case 4: // division
 		{
-	
-            break;
+			break;
 		}
 		case 5: // elevar a potencia
 		{
