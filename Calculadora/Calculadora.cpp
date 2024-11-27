@@ -3,7 +3,7 @@
 
 #include <iostream>
 // Aqui pueden agregar las clases de cada funcion de la calculadora
-#include "ejemplo.h" // un ejemplo de como incluir la clase
+#include "suma.h" // un ejemplo de como incluir la clase
 
 
 using namespace std; // necesario para no tener que escribir std :: antes de cada cin o cout
