@@ -4,6 +4,7 @@
 #include <iostream>
 // Aqui pueden agregar las clases de cada funcion de la calculadora
 #include "ejemplo.h" // un ejemplo de como incluir la clase
+#include "resta.h"
 
 
 using namespace std; // necesario para no tener que escribir std :: antes de cada cin o cout
@@ -13,7 +14,7 @@ int main()
 	int opcion = 0;
 	// crear los objetos de las clases
 	ejemplo EjObjeto; // ejemplo de como crear el objeto
-
+	resta RestaObj;
 
 	cout << "Bienvenido a la calculadora!!!\n";
 
@@ -40,6 +41,8 @@ int main()
 
 		case 2: // resta
 		{
+			cout << "Seleccionaste Resta.\n \n";
+			Objeto.funcion();
 			break;
 		}
 
@@ -64,7 +67,7 @@ int main()
 		case 7: // ejemplo
 		{
 			cout << "Seleccionaste Ejemplo.\n \n";
-			EjObjeto.funcion();
+			RestaObj.funcion();
 			break;
 		}
 		default:
