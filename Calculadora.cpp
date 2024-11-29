@@ -8,8 +8,26 @@
 
 using namespace std; // necesario para no tener que escribir std :: antes de cada cin o cout
 
+void dividir() {
+    double num1, num2;
+    cout << "Seleccionaste Division.\n";
+    cout << "Introduce el primer numero: ";
+    cin >> num1;
+    cout << "Introduce el segundo numero: ";
+    cin >> num2;
+
+    if (num2 == 0) {
+        cout << "Error: No se puede dividir entre cero.\n";
+    } else {
+        double resultado = num1 / num2;
+        cout << "El resultado de la division es: " << resultado << "\n";
+    }
+}  
+
 int main()
 {
+
+	
 	int opcion = 0;
 	// crear los objetos de las clases
 	ejemplo EjObjeto; // ejemplo de como crear el objeto
@@ -50,7 +68,8 @@ int main()
 
 		case 4: // division
 		{
-			break;
+			 dividir();
+            break;
 		}
 		case 5: // elevar a potencia
 		{
