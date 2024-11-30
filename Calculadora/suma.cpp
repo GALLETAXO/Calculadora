@@ -17,7 +17,7 @@ using namespace std;
 	{
 		Valor1 = 0;
 		Valor2 = 0;
-		resultado = Valor1 + Valor2;
+		resultado = 0;
 	};
 
 	void  suma :: funcion()
@@ -26,6 +26,8 @@ using namespace std;
 		cin >> Valor1;
 		cout << "Ingresa el segundo valor: ";
 		cin >> Valor2;
+
+		resultado = Valor1 + Valor2;
 
 		cout << "Este es el resultado: " << resultado << endl;
 	

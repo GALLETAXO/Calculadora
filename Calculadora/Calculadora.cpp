@@ -5,7 +5,10 @@
 // Aqui pueden agregar las clases de cada funcion de la calculadora
 #include "ejemplo.h" // un ejemplo de como incluir la clase
 #include "resta.h"
-#include "suma.h" // un ejemplo de como incluir la clase
+#include "suma.h" 
+#include "multiplicacion.h" 
+#include "division.h" 
+#include "potencia.h" 
 
 
 using namespace std; // necesario para no tener que escribir std :: antes de cada cin o cout
@@ -16,6 +19,10 @@ int main()
 	// crear los objetos de las clases
 	ejemplo EjObjeto; // ejemplo de como crear el objeto
 	resta RestaObj;
+	suma SumaObj;
+	multiplicacion MultiObj;
+	division DivObj;
+	potencia PotenciaObj;
 
 	cout << "Bienvenido a la calculadora!!!\n";
 
@@ -29,35 +36,32 @@ int main()
 
 		case 1: // suma
 		{
-
-			/*  NOTA: en su operacion que les toca, recomendaria solo usar el objeto correspondiente para llamar a la funcion
-			* no crear el objeto aqui dentro, para evitar problemas creando varior objetos casa que se selecciona esta opcion
-			* si se les ocurre algo mas chido, diganmelo xddd o implementelo claro
-			* PD: recomendaria pedir los datos dentro de la funcion, para no tener que estar pasandolos en la llamda a la funcion
-			* El caso 7 es un ejemplo de esto que comento
-			
-			*/ 
+			SumaObj.funcion();
 			break;
 		}
 
 		case 2: // resta
 		{
 			cout << "Seleccionaste Resta.\n \n";
-			Objeto.funcion();
+			RestaObj.funcion();
 			break;
 		}
 
 		case 3: // multiplicacion
 		{
+			cout << "Seleccionaste Resta.\n \n";
+			MultiObj.multiplicar();
 			break;
 		}
 
 		case 4: // division
 		{
+			DivObj.dividir();
 			break;
 		}
 		case 5: // elevar a potencia
 		{
+			PotenciaObj.calcularPotencia();
 			break;
 		}
 		case 6: // Salir

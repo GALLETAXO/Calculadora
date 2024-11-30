@@ -128,10 +128,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Calculadora.cpp" />
+    <ClCompile Include="division.cpp" />
     <ClCompile Include="ejemplo.cpp" />
+    <ClCompile Include="multiplicacion.cpp" />
+    <ClCompile Include="potencia.cpp" />
+    <ClCompile Include="resta.cpp" />
+    <ClCompile Include="suma.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="division.h" />
     <ClInclude Include="ejemplo.h" />
+    <ClInclude Include="multiplicacion.h" />
+    <ClInclude Include="potencia.h" />
+    <ClInclude Include="resta.h" />
+    <ClInclude Include="suma.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
